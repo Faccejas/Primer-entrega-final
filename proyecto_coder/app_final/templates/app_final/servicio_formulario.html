@@ -1,0 +1,17 @@
+{% extends 'app_final/base.html' %}
+
+{% block contenido %}
+<form action="/origen/Servicios/crear/" method="post">
+    {% csrf_token %}
+    <p>
+        nombre <input type="text" name="nombre">
+    </p>
+    <p>
+        estilo <input type="text" name="estilos">
+    </p>
+
+    <input type="submit" value="Crear servicio">
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'app_final/base.html' %}
+
+{% block contenido %}
+
+<form action="{% url 'resultados_servicios' %}" method="get"> 
+    
+    <p>
+        Nombre del servicio: <input type="text" name="nombre_servicio">
+        <input type="submit" value="Buscar">
+
+    </p>
+   
+</form>
+
+
+{% endblock %}
